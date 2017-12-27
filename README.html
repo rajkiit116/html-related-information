@@ -85,6 +85,17 @@ $(document).ready(function(){
                             alert('not enter');
                         }
                     });
------------------------------------------------------------------
+---------------------- autofocused using jquery after clicking edit button-------------------------------------------
+                    <div class="container">
+                      <input id="raj" value="mishraa" > </input>
+                    <button class="btn btn-info" id="edit">edit</button>
+                    </div>
+
+                    $('#edit').click(function(){
+                        var content = $('#raj').val();
+                       $("#raj").focus();
+                       $('#edit').show();
+                    });
+---------------------------------------------------------
 
 
