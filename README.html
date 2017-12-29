@@ -96,6 +96,20 @@ $(document).ready(function(){
                        $("#raj").focus();
                        $('#edit').show();
                     });
----------------------------------------------------------
+-----------------------------hide exisitng div and displayed textbox after cliking enter button------------(http://jsfiddle.net/Q22tG/)-----http://jsfiddle.net/7vcZT/  http://jsfiddle.net/8sth0xa7/-----------
+
+<input id="txtBox" type="textbox" placeholder="enter alias name" style="display:none;
+" />
+<div id="textId" value="name" >01</div>
+<button id="txtBoxValue"> button</button>
+
+$(function() {
+        $('#txtBoxValue').on('click', function() {
+            $(this).hide();
+            $('#txtBox').show();
+            $('#textId').hide();
+        });
+    });
+
 
 
