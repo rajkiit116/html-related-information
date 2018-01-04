@@ -136,4 +136,14 @@ What's your name: <input type=text size=20 autocorrect=off autocapitalize=words>
 	  <div id="mis" class="font-effect-fire-animation">Making the Web Beautiful!</div>
   </body>
 </html>
--------------------------------
+---------https://stackoverflow.com/questions/3656467/is-it-possible-to-focus-on-a-div-using-javascript-focus-function----------------------
+document.getElementById('test').onclick = function () {
+    document.getElementById('scripted').focus();
+};
+div:focus {
+    background-color: Aqua;
+}
+<div>Element X (not focusable)</div>
+<div tabindex="0">Element Y (user or script focusable)</div>
+<div tabindex="-1" id="scripted">Element Z (script-only focusable)</div>
+<div id="test">Set Focus To Element Z</div>
