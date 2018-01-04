@@ -147,3 +147,9 @@ div:focus {
 <div tabindex="0">Element Y (user or script focusable)</div>
 <div tabindex="-1" id="scripted">Element Z (script-only focusable)</div>
 <div id="test">Set Focus To Element Z</div>
+===============focus in div=======
+var element = $("#focus_point");
+element.css('outline', 'none !important')
+       .attr("tabindex", -1)
+       .focus();
+===============
