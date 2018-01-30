@@ -157,4 +157,23 @@ element.css('outline', 'none !important')
 	<dt>Raj</dt>
     <dd>In inFosys</dd>
 </dl>
-===
+====================================================
+<html>
+    <body>
+        <div id="DivID"></div>
+    </body>
+</html>
+$(document).ready(function() {
+    if ($('#DivID').length){
+        alert('Found with Length');
+    }
+    
+    if ($('#DivID').length > 0 ) {
+        alert('Found with Length bigger then Zero');
+    }
+    
+    if ($('#DivID') != null ) {
+        alert('Found with Not Null');
+    }
+});
+=====================================================
